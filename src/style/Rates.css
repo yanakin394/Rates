@@ -1,0 +1,49 @@
+.unlimited{
+    border: 2px solid white;
+    width: 300px;
+    height: 400px;
+    margin: 0.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.rate_speed,
+.rate_price,
+.rate_title,
+.rate_traffic{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate_title{
+    height: 75px;
+    background-color: rgb(43, 193, 204);
+    color:white;
+    font-size: 2rem;
+}
+.rate_price{
+    height: 200px;
+    background-color: rgb(58, 220, 231);
+    color:white;
+    text-align: center;
+}
+.rate_number{
+    font-size: 5rem;
+}
+.rate_currency{
+    align-self: flex-start;
+    
+}
+.rate_speed{
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: rgb(222, 225, 226);
+}
+.rate_traffic{
+    height: 75px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: rgb(207, 208, 209);
+}
