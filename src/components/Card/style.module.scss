@@ -8,6 +8,10 @@
     height: 400px;
     margin: 0.25rem;
 }
+.rate:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
 .rate_speed,
 .rate_price,
 .rate_title,

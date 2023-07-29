@@ -1,5 +1,5 @@
 import Rates from './components/Card/Card';
-import './style/App.css';
+import './style/App.scss';
 
 
 
