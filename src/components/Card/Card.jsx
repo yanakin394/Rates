@@ -4,19 +4,9 @@ import React, { useState } from 'react';
 import ratesData from '../data/rates.json';
 
 export default function Card() {
-    const [selected, setSelected] = useState(false);
+    const [selected, setSelected] = useState(Array(ratesData.length).fill(false));
     const handleChange = (index) => {
-        setSelected((prevState) => {
-            const updatedSelection = Array.from(prevState); // собираю массив изнач. состояния
-            console.log(updatedSelection);
-            let [selectedItem, ...otherItems] = [updatedSelection[index], ...updatedSelection];     //деструктуризация на выбранный айтем и остальные, присваиваю индекс выбранному
-            for (let item of otherItems) {                                             // перебираю остальные айтемы и задаю им состояние false
-                setSelected(false);
-            }
-            updatedSelection[index] = !updatedSelection[index];             //задаю состояние противопопложное предыдущему 
-            console.log(updatedSelection);
-            return updatedSelection;
-        });
+        setSelected(prevState => prevState.map((_, i) => i === index));
         console.log('bla');
     }
     return (
